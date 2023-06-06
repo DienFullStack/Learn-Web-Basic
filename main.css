@@ -1,0 +1,641 @@
+:root{
+    --white-color:#FAFAFE;
+    --text-color:#27282F;
+    --primary-color:#393357;
+    --nav-width: 80px;
+    --padding-standard: 48px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.active .nav-icon{
+    box-shadow: 0px 0px 22px rgba(255,255,255,0.7);
+    border-radius: 50px;
+}
+/* app-layer */
+.app-layer{
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+/* app-nav */
+.app-nav{
+    min-width: var(--nav-width);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+    background-color: var(--primary-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.app-nav .nav-plate{
+    border-radius: 50px;
+    color: #ffffff;
+    background-color: #6a57c5;
+    padding: 16px;
+}
+.nav-list,
+.nav-list-action
+{
+    padding: 0;
+    list-style-type: none;
+}
+
+.nav-item{
+    padding: 16px;
+    position: relative;
+    
+}
+
+.nav-list-action .nav-item:nth-child(4)::after{
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    top: 200%;
+    left: 3px;
+    right: 3px;
+    width: 80%;
+}
+.nav-link{
+    text-decoration: none;
+}
+
+.nav-link:hover{
+    opacity: 0.6;
+    transition: 0.2s;
+}
+
+.nav-icon{
+    font-weight: 900;
+    color: var(--white-color);
+    font-size: 1.2rem;
+    
+}
+/* app-content */
+.app .app-content{
+    flex: 1;
+    background-color: #fff;
+    padding: 48px;
+    padding-top: 0;
+    padding-left: calc(var(--nav-width) + var(--padding-standard));
+}
+
+.app-content-heading{
+    position: fixed;
+    top: 0;
+    padding: 10px 0;
+    left: 128px;
+    line-height: 0;
+    right: 0;
+    background-color: #2b273e;
+    display: flex;
+    align-items: center;
+    z-index: 999;
+    border-radius: 10px;
+    margin: 0;
+    opacity: 0.98;
+}
+
+.heading-title{
+    color: var(--white-color);
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.heading-search{
+    display: flex;
+    align-items: center;
+}
+
+.heading-notice{
+    padding: 0 16px;
+    position: relative;
+    color: var(--white-color);
+}
+
+.heading-notice::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 30%;
+    width: 9px;
+    height: 9px;
+    background-color: aqua;
+    border-radius: 50px;
+}
+.heading-notice i{
+    font-size: 1.4rem;
+}
+
+.heading-search-input{
+    border: 2px solid var(--white-color);
+    padding: 6px;
+    border-radius: 50px;
+    color: var(--white-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: transparent;
+}
+
+.heading-input{
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background-color: #2b273e;
+    color: var(--white-color);
+    width: 0;
+}
+
+.heading-search-input:hover .heading-input{
+    width: 280px;
+    transition: 0.6s;
+}
+
+.heading-search-input:hover{
+    border-color: var(--white-color);
+    box-shadow: 0px 0px 4px var(--white-color);
+}
+
+input::-webkit-input-placeholder {
+    color: #D6D5DA;
+}
+
+
+.heading-search-input i{
+    padding: 5px;
+    color: #D6D5DA;
+}
+
+/* top song */
+.app-content-top-song{
+    height:280px;
+    margin-top: 80px;
+}
+
+.song-image-background{
+    background-image: url(/accsset/img/noo-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 280px;
+    width: 772px;
+    border-radius: 25px;
+}
+
+.song-list{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.song-list-heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.song-list-see{
+    color: rgb(61, 86, 212);
+}
+
+.song-infor-list{
+    list-style-type: none;
+    padding: 0;
+    overflow-y: auto;
+    height: 248px;
+}
+
+.song-infor-list::-webkit-scrollbar{
+    display: none;
+}
+
+.song-infor-item{
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.song-thumb{
+    background-image: url(/accsset/img/noo-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50px;
+    padding-top: 50px;
+    border-radius: 50%;
+}
+
+.song-infor-img{
+    width: 50%;
+}
+
+.song-infor-contain{
+    flex: 1;
+    padding: 0 16px;
+}
+
+.song-infor-name{
+    font-size: 16px;
+    color: var(--text-color);
+    margin-bottom: 4px;
+}
+
+.song-infor-popular{
+    display: flex;
+    font-size: 12px;
+    color:rgba(0,0,0,0.4)
+}
+
+.song-infor-follow{
+    max-height: 10px;
+    line-height: 10px;
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+
+
+.song-infor-option{
+    padding: 8px;
+}
+
+.song-infor-option:hover{
+    opacity: 0.7;
+}
+
+.song-infor-option i{
+    font-weight: 900;
+    font-size: 16px;
+}
+
+/* song song */
+
+.song-song{
+    background-color: var(--primary-color);
+    text-align: center;
+    border-radius: 25px;
+}
+
+.play-song{
+    color: var(--white-color);
+    margin-top: 10px;
+    padding-right: 40px;
+}
+
+.play-song-title{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.play-song-name{
+    text-align: center;
+    --height: 37.6px;
+    max-height: var(--height);
+    line-height: var(--height);
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.cd{
+    width: 150px;
+    margin: auto;
+}
+
+.play-song-thumbnail{
+    width: 100%;
+    background-image: url(/accsset/img/noo-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 100%;
+    border-radius: 50%;
+}
+
+.play-control{
+    display: flex;
+    justify-content: center;
+    padding: 15px 0 10px;
+}
+
+.play-control-basic{
+    display: flex;
+    justify-content: center;
+}
+
+.change-volume{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    flex: 1;
+
+}
+.btn.btn-play-pause{
+    color: var(--white-color);
+    background-color: #6a57c5;
+    border-radius: 50%;
+}
+
+.btn-play{
+    line-height: 18px;
+}
+
+.btn-pause{
+    display: none;
+}
+
+.btn.btn-play-pause.active .btn-pause{
+    display: block;
+}
+
+.btn.btn-play-pause.active .btn-play{
+    display: none;
+    background-image: url(/accsset/music/gio_jank_cukak_remix_audio_lyrics_video_-546214312137363447.mp3);
+}
+
+.btn,
+.btn-volume
+{
+    padding: 12px;
+    color: var(--white-color);
+    font-size: 18px;
+    width: 42px;
+    line-height: 0;
+    box-shadow: 0px 0px 6px #625d78;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.btn:hover{
+    color:#b7a8c6;
+    cursor: pointer;
+}
+
+.btn-volume{
+    position: absolute;
+
+}
+
+.btn-volume:hover{
+    color: #6a57c5;
+    cursor: pointer;
+}
+
+.action
+{
+    color: #6a57c5;
+}
+
+.progress {
+    width: 90%;
+    height: 10px;
+    -webkit-appearance: none;
+    height: 6px;
+    background: #736d92;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .progress::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 6px;
+    background-color: #282051;
+    cursor: pointer;
+  }
+
+  .progress-volume{
+    transform: rotate(270deg);
+    height: 10px;
+    width: 120px;
+    margin-bottom: 10px;
+    position: absolute;
+    bottom: 110px;
+    right: -50%;
+    -webkit-appearance: none;
+    height: 14px;
+    background: #736d92;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+    border-radius: 10px;
+    overflow: hidden;
+    display: none;
+  }
+
+  .change-volume:hover .progress-volume{
+    display: block; 
+}
+.change-volume::after{
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+}
+  .progress-volume::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 36px;
+    background-color: #282051;
+    cursor: pointer;
+  }
+/* "app-content-body */
+
+.app-content{
+    font-family: segoe ui;
+    color: var(--text-color);
+}
+
+.app-content-body{
+    padding-top: 64px;
+}
+
+.content-trending-heading{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.content-trending-title{
+    font-size: 25px;
+}
+
+.content-trending-see{
+    font-size: 19px;
+    color: rgb(61, 86, 212);
+
+}
+
+.content-trending-list{
+    padding-top: 32px;
+    list-style-type: none;
+    width: 100%;
+    overflow-y: scroll;
+    /* background-color: rgba(0,0,0,0.07); */
+    height: 39vh;
+}
+
+.content-trending-list::-webkit-scrollbar{
+    display: none;
+}
+
+.content-trending-item{
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+}
+
+.content-trending-item.active{
+    background-color: #393357;
+    color: var(--white-color);
+}
+ 
+.content-trending-item.active .content-trending-num
+{
+    color: var(--white-color);
+}
+
+.content-trending-item.active .content-trending-interact-view
+{
+    color: var(--white-color);
+}
+
+.content-trending-item.active .content-trending-singger
+{
+    color: var(--white-color);
+}
+
+.content-trending-num{
+    font-weight: 700;
+    color: rgba(0,0,0,0.4);
+}
+
+.content-trending-thumb{
+    /* background-image: url("/accsset/img/noo-banner.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70%;
+    border-radius: 10px;
+}
+
+.content-trending-infor{
+   text-align: left;
+   padding: 0 16px;
+}
+
+.content-trending-infor-name{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.content-trending-singger{
+    font-size: 12px;
+    color: rgba(0,0,0,0.4);
+}
+
+.content-trending-interact-time{
+    font-weight: 600;
+}
+
+.content-trending-interact-view{
+    color: rgba(0,0,0,0.4);
+
+}
+
+
+.content-trending-infor-option{
+   display: flex;
+   justify-content: space-between;
+}
+
+.content-trending-icon{
+   padding: 0 4px;
+   font-size: 20px;
+}
+
+.content-trending-icon.active{
+    color: #8f4793;
+}
+
+.content-trending-icon_2{
+    font-weight: 900;
+    padding: 0 4px;
+   font-size: 20px;
+}
+
+/* content recent */
+
+.content-recent-heading{
+    font-size: 25px;
+}
+
+.content-recent-list{
+    padding: 0;
+    list-style: none;
+    margin-top: 20px;
+    height: 39vh;
+    overflow-y: auto;
+}
+
+.content-recent-list::-webkit-scrollbar{
+    display: none;
+}
+.content-recent-item{
+    margin-bottom: 30px;
+}
+
+.content-recent-image{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.content-recent-title{
+    padding: 8px 0 4px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.content-recent-description{
+    color: rgba(0,0,0,0.6);
+    font-size: 13px;
+    line-height: 1.2rem;
+    max-height: 2.4rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
