@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Music</title>
+    <link rel="stylesheet" href="/accsset/font/fontawesome-free-6.4.0-web/fontawesome-free-6.4.0-web/css/all.min.css">
+    <link rel="stylesheet" href="/accsset/grid/grid.css">
+    <link rel="stylesheet" href="/accsset/css/main.css">
+</head>
+<body>
+    <div class="app">
+        <div class="app-layer">
+            <div class="app-nav ">
+                <div class="nav-plate">
+                    <i class="fa-sharp fa-solid fa-compact-disc nav-icon nav-icon--rotate"></i>
+                </div>
+                <ul class="nav-list-action">
+                    <li class="nav-item active">
+                        <a href="" class="nav-link">
+                            <i class="fa-solid fa-house nav-icon"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                            <i class="fa-sharp fa-regular fa-music nav-icon"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                            <i class="fa-regular fa-folder nav-icon"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                            <i class="fa-solid fa-user nav-icon"></i>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                            <i class="fa-regular fa-heart nav-icon"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                            <i class="fa-regular fa-star nav-icon"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                            <i class="fa-solid fa-folder-open nav-icon"></i>
+                        </a>
+                    </li>
+                </ul>
+                <div class="nav-setting">
+                    <i class="fa-regular fa-gear nav-icon"></i>
+                </div>
+            </div>
+            <div class="app-content grid">
+                <div class="app-content-heading row">
+                  <h1 class="heading-title col l-7">Home</h1>
+                  <div class="heading-search col l-5">
+                    <div class="heading-notice">
+                        <i class="fa-regular fa-bell"></i>
+                      </div>
+                      <div class="heading-search-input">
+                        <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                        <input class="heading-input " type="text" placeholder="Search">
+                      </div>
+                  </div>
+                </div>
+
+                <div class="app-content-top-song row">
+                    <div class="song-image col l-7">
+                        <div class="song-image-background"></div>
+                    </div>
+
+                    <div class="song-song col l-3">
+                        <div class="play-song">
+                            <div class="play-song-title">Playing Now</div>
+                            <div class="play-song-name">Music 1</div>
+                            <div class="cd">
+                                <div class="play-song-thumbnail"></div>
+                            </div>
+                        </div>
+
+                        <div class="play-control">
+                            <div class="play-control-basic">
+                                <div class="btn btn-repeat">
+                                    <i class="fa-solid fa-rotate-right"></i>
+                                </div>
+                                <div class="btn btn-prev">
+                                    <i class="fa-solid fa-backward-fast"></i>
+                                </div>
+                                <div class="btn btn-play-pause">
+                                    <i class="fa-solid fa-play btn-play"></i>
+                                    <i class="fa-solid fa-pause btn-pause"></i>
+                                </div>
+                                <div class="btn btn-next">
+                                    <i class="fa-sharp fa-solid fa-forward-fast"></i>
+                                </div>
+                                <div class="btn btn-random">
+                                    <i class="fa-solid fa-shuffle"></i>
+                                </div>
+                            </div>
+                            <div class="change-volume">    
+                                <input type="range" class="progress-volume" value="0" min="0" max="100" step="1">
+                                <div class="btn-volume">
+                                    <i class="fa-sharp fa-solid fa-volume-high"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <input type="range" class="progress" value="0" min="0" max="100" step="1">
+
+                        <audio id="audio" src=""></audio>
+                    </div>
+
+                    <div class="song-list col l-2">
+                        <div class="song-list-heading">
+                            <h2 class="song-list-title">Top Song</h2>
+                            <a href="#" class="song-list-see">See all</a>
+                        </div>
+                        <ul class="song-infor-list">
+                            <li class="song-infor-item">
+                                <div class="song-thumb">
+
+                                </div>
+                                <div class="song-infor-contain">
+                                    <h3 class="song-infor-name">Muse</h3>
+                                    <div class="song-infor-popular">
+                                        <div class="song-infor-follow">142291 Followers</div>
+                                    </div>
+                                </div>
+                                
+                            </li>
+                            <li class="song-infor-item">
+                                <div class="song-thumb">
+
+                                </div>
+                                <div class="song-infor-contain">
+                                    <h3 class="song-infor-name">Muse</h3>
+                                    <div class="song-infor-popular">
+                                        <div class="song-infor-follow">142291 Followers</div>
+                                    </div>
+                                </div>
+                                
+                            </li>
+                            <li class="song-infor-item">
+                                <div class="song-thumb">
+
+                                </div>
+                                <div class="song-infor-contain">
+                                    <h3 class="song-infor-name">Muse</h3>
+                                    <div class="song-infor-popular">
+                                        <div class="song-infor-follow">142291 Followers</div>
+                                    </div>
+                                </div>
+                                
+                            </li>
+                            <li class="song-infor-item">
+                                <div class="song-thumb">
+
+                                </div>
+                                <div class="song-infor-contain">
+                                    <h3 class="song-infor-name">Muse</h3>
+                                    <div class="song-infor-popular">
+                                        <div class="song-infor-follow">142291 Followers</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="song-infor-item">
+                                <div class="song-thumb">
+
+                                </div>
+                                <div class="song-infor-contain">
+                                    <h3 class="song-infor-name">Muse</h3>
+                                    <div class="song-infor-popular">
+                                        <div class="song-infor-follow">142291 Followers</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="song-infor-item">
+                                <div class="song-thumb">
+
+                                </div>
+                                <div class="song-infor-contain">
+                                    <h3 class="song-infor-name">Muse</h3>
+                                    <div class="song-infor-popular">
+                                        <div class="song-infor-follow">142291 Followers</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="song-infor-item">
+                                <div class="song-thumb">
+
+                                </div>
+                                <div class="song-infor-contain">
+                                    <h3 class="song-infor-name">Muse</h3>
+                                    <div class="song-infor-popular">
+                                        <div class="song-infor-follow">142291 Followers</div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="app-content-body row">
+                    <div class="content-trending col l-7">
+                        <div class="content-trending-heading">
+                            <h3 class="content-trending-title">
+                                Trending right now
+                            </h3>
+                            <a href="" class="content-trending-see">See all</a>
+                        </div>
+
+                        <ul class="content-trending-list">
+                            <li class="content-trending-item active row">
+                                    <p class="content-trending-num col l-1">1</p>
+                                    <div class="content-trending-thumb col l-1">
+                                    </div>
+                                    <div class="content-trending-infor col l-4">
+                                        <h3 class="content-trending-infor-name">d</h3>
+                                        <div class="content-trending-singger">d</div>
+                                    </div>
+                                        <p class="content-trending-interact-time col l-2">d</p>  
+                                        <p class="content-trending-interact-view col l-2">d</p>
+                                        
+                                    <div class="content-trending-infor-option col l-2">
+                                        <i class="fa-regular fa-heart content-trending-icon"></i>
+                                        <i class="fa-regular fa-ellipsis content-trending-icon_2"></i>
+                                    </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="content-recent col l-5">
+                        <h3 class="content-recent-heading">
+                            Recent favourites
+                        </h3>
+                        <ul class="content-recent-list row">
+                            <li class="content-recent-item col l-4">
+                                <img src="/accsset/img/noo-banner.jpg" class="content-recent-image"></img>
+                                <div class="content-recent-infor">
+                                    <h3 class="content-recent-title">Family tourism</h3>
+                                    <div class="content-recent-description">
+                                        The more, the merrier. Suitable for chiildren</div>
+                                </div>
+                            </li>
+                            <li class="content-recent-item col l-4">
+                                <img src="/accsset/img/noo-banner.jpg" class="content-recent-image"></img>
+                                <div class="content-recent-infor">
+                                    <h3 class="content-recent-title">Family tourism</h3>
+                                    <div class="content-recent-description">
+                                        The more, the merrier. Suitable for chiildren</div>
+                                </div>
+                            </li>
+                            <li class="content-recent-item col l-4">
+                                <img src="/accsset/img/noo-banner.jpg" class="content-recent-image"></img>
+                                <div class="content-recent-infor">
+                                    <h3 class="content-recent-title">Family tourism</h3>
+                                    <div class="content-recent-description">
+                                        The more, the merrier. Suitable for chiildren</div>
+                                </div>
+                            </li>
+                            <li class="content-recent-item col l-4">
+                                <img src="/accsset/img/noo-banner.jpg" class="content-recent-image"></img>
+                                <div class="content-recent-infor">
+                                    <h3 class="content-recent-title">Family tourism</h3>
+                                    <div class="content-recent-description">
+                                        The more, the merrier. Suitable for chiildren</div>
+                                </div>
+                            </li>
+                            <li class="content-recent-item col l-4">
+                                <img src="/accsset/img/noo-banner.jpg" class="content-recent-image"></img>
+                                <div class="content-recent-infor">
+                                    <h3 class="content-recent-title">Family tourism</h3>
+                                    <div class="content-recent-description">
+                                        The more, the merrier. Suitable for chiildren</div>
+                                </div>
+                            </li>
+                            <li class="content-recent-item col l-4">
+                                <img src="/accsset/img/noo-banner.jpg" class="content-recent-image"></img>
+                                <div class="content-recent-infor">
+                                    <h3 class="content-recent-title">Family tourism</h3>
+                                    <div class="content-recent-description">
+                                        The more, the merrier. Suitable for chiildren</div>
+                                </div>
+                            </li>
+                            <li class="content-recent-item col l-4">
+                                <img src="/accsset/img/noo-banner.jpg" class="content-recent-image"></img>
+                                <div class="content-recent-infor">
+                                    <h3 class="content-recent-title">Family tourism</h3>
+                                    <div class="content-recent-description">
+                                        The more, the merrier. Suitable for chiildren</div>
+                                </div>
+                            </li>
+                            <li class="content-recent-item col l-4">
+                                <img src="/accsset/img/noo-banner.jpg" class="content-recent-image"></img>
+                                <div class="content-recent-infor">
+                                    <h3 class="content-recent-title">Family tourism</h3>
+                                    <div class="content-recent-description">
+                                        The more, the merrier. Suitable for chiildren
+                                        The more, the merrier. Suitable for chiildren
+                                        The more, the merrier. Suitable for chiildren
+
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="content-recent-item col l-4">
+                                <img src="/accsset/img/noo-banner.jpg" class="content-recent-image"></img>
+                                <div class="content-recent-infor">
+                                    <h3 class="content-recent-title">Family tourism</h3>
+                                    <div class="content-recent-description">
+                                        The more, the merrier. Suitable for chiildren</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="/accsset/js/main.js"></script>
+</html>
